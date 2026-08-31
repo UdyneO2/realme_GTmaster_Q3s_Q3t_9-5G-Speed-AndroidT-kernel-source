@@ -6,7 +6,7 @@ on:
       defconfig:
         description: 'Defconfig yang dipakai'
         required: false
-        default: 'lahaina_defconfig'
+        default: 'yupik-qgki_defconfig'
   push:
     branches:
       - release
@@ -149,7 +149,7 @@ jobs:
       - name: Upload kernel image
         uses: actions/upload-artifact@v4
         with:
-          name: kernel-output-${{ github.run_number }}
+          name: kernel-beta-lunaa-${{ github.run_number }}
           path: |
             source/kernel_out/arch/arm64/boot/Image*
             source/kernel_out/arch/arm64/boot/dts/**/*.dtb
