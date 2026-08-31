@@ -44,7 +44,7 @@ jobs:
         run: |
           if [ ! -d "$KERNEL_DIR" ]; then
             echo "cloning"
-            git clone https://github.com/realme-kernel-opensource/realme_GTmaster_Q3s_Q3t_9-5G-Speed-AndroidT-kernel-source.git "$KERNEL_DIR" --depth=1
+            git clone https://github.com/udyneo2/realme_GTmaster_Q3s_Q3t_9-5G-Speed-AndroidT-kernel-source.git "$KERNEL_DIR" --depth=1
           else
             echo "Dir already"
           fi
